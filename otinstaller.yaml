@@ -24,7 +24,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/nerva@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/nerva@sha256:fe5506ea1aa26ed465f976bcf3ed550d93390b77b6ef8d558807815630debfb2
   platforms: [linux/amd64, linux/arm64]
   command: ["nerva", "--json", "-t", "{target}"]
   output_format: jsonl
